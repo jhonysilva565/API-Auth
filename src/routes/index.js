@@ -1,5 +1,5 @@
 import bodyParser from "body-parser"
-import auth from './auth.js'
+import auth from "./auth.js"
 
 const routes = (app) => {
     app.use(
