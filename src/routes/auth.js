@@ -3,8 +3,8 @@ import { Router } from "express";
 import 
     {
     getAllLogins,
-    getLoginByID,
-    singUp
+    // getLoginByID,
+    // singUp
     } from "../controllers/AuthController.js";
 
 const auth = Router()
@@ -12,6 +12,6 @@ const auth = Router()
 auth
     .get('/', getAllLogins)
     // .get('/:id', getLoginByID)
-    // .post('/', singUp)
+    .post('/', singUp)
 
 export default auth
